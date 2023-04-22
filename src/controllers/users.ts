@@ -3,7 +3,7 @@ import { getUsers } from "db/users";
 
 export const getAllUsers = async(req: express.Request, res: express.Response) => {
     try{
-        const user = await getUsers(); 
+        const users = await getUsers(); 
 
         return res.status(200).json(users); 
     } catch(error){
